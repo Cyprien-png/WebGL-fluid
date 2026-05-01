@@ -51,7 +51,6 @@ export default function (el, config) {
     COLOR_UPDATE_SPEED: 10,
     PAUSED: false,
     BACK_COLOR: { r: 0, g: 0, b: 0 },
-    DEFAULT_COLOR: { r: 0.01, g: 0.01, b: 0.01 },
     TRANSPARENT: false,
     BLOOM: true,
     BLOOM_ITERATIONS: 8,
@@ -75,7 +74,7 @@ export default function (el, config) {
     this.deltaY = 0
     this.down = false
     this.moved = false
-    this.color = config.DEFAULT_COLOR
+    this.color = config.DEFAULT_COLOR || { r: 0.09, g: 0.12, b: 0.15 }
   }
 
   const pointers = []
