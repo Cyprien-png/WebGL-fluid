@@ -74,7 +74,7 @@ export default function (el, config) {
     this.deltaY = 0
     this.down = false
     this.moved = false
-    this.color = [30, 0, 300]
+    this.color = { r: 0.09, g: 0.12, b: 0.15 }
   }
 
   const pointers = []
