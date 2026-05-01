@@ -176,13 +176,13 @@ WebGLFluid(document.querySelector('canvas'), {
 
 ## Default dye color (DEFAULT_COLOR)
 
-DEFAULT_COLOR is the RGB used for **pointer** splats (hover). The library’s own default is `{ r: 0.01, g: 0.01, b: 0.01 }`. It is only applied when you do **not** pass DEFAULT_COLOR in your options.
+DEFAULT_COLOR is the RGB used for **pointer** splats (hover). The library’s own default is `{ r: 0.09, g: 0.12, b: 0.15 }`. It is only applied when you do **not** pass DEFAULT_COLOR in your options.
 
 **Omit `DEFAULT_COLOR`** pointer splats use the built-in default above, and **each mouse/touch down** picks a **new random** dye color (`generateColor()`).
 
 ```ts
 WebGLFluid(document.querySelector('canvas'), {
-  DEFAULT_COLOR: { r: 0.09, g: 0.12, b: 0.15 },
+  DEFAULT_COLOR: { r: 0.09, g: 0, b: 0 },
 })
 ```
 
