@@ -74,7 +74,7 @@ export default function (el, config) {
     this.deltaY = 0
     this.down = false
     this.moved = false
-    this.color = config.DEFAULT_COLOR || { r: 0.09, g: 0.12, b: 0.15 }
+    this.color = generateColor()
   }
 
   const pointers = []
@@ -1530,7 +1530,7 @@ export default function (el, config) {
     pointer.prevTexcoordY = pointer.texcoordY
     pointer.deltaX = 0
     pointer.deltaY = 0
-    if (!config.DEFAULT_COLOR) {
+    if (config.COLORFUL) {
       pointer.color = generateColor()
     }
   }
